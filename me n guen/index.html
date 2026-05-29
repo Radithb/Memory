@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>adit n guenn 🌸</title>
+  <meta name="description"
+    content="Sebuah ruang kenangan digital yang eksklusif dan privat, penuh dengan momen-momen berharga." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&family=Dancing+Script:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== FLOWER STORM OVERLAY ===== -->
+  <div id="flower-storm-overlay" class="flower-storm-overlay"></div>
+
+  <!-- ===== SCREEN 1: LOGIN PAGE ===== -->
+  <div id="login-screen" class="screen active">
+    <div class="login-bg"></div>
+    <div class="flower-decor top-left">🌸</div>
+    <div class="flower-decor top-right">🌷</div>
+    <div class="flower-decor bottom-left">🌼</div>
+    <div class="flower-decor bottom-right">🌹</div>
+
+    <div class="login-card">
+      <div class="lock-icon" id="lock-icon">🔒</div>
+      <h1 class="login-title">adit n guenn's memory</h1>
+      <p class="login-subtitle">hayoo apa coba pin nyaa ✨</p>
+      <p class="login-hint">Coba masukkin tanggal jadian kita</p>
+
+      <div class="pin-container" id="pin-container">
+        <div class="pin-dot" id="dot-0"></div>
+        <div class="pin-dot" id="dot-1"></div>
+        <div class="pin-dot" id="dot-2"></div>
+        <div class="pin-dot" id="dot-3"></div>
+        <div class="pin-dot" id="dot-4"></div>
+        <div class="pin-dot" id="dot-5"></div>
+      </div>
+
+      <div class="numpad" id="numpad">
+        <button class="num-btn" data-num="1">1</button>
+        <button class="num-btn" data-num="2">2</button>
+        <button class="num-btn" data-num="3">3</button>
+        <button class="num-btn" data-num="4">4</button>
+        <button class="num-btn" data-num="5">5</button>
+        <button class="num-btn" data-num="6">6</button>
+        <button class="num-btn" data-num="7">7</button>
+        <button class="num-btn" data-num="8">8</button>
+        <button class="num-btn" data-num="9">9</button>
+        <button class="num-btn clear-btn" id="clear-btn">⌫</button>
+        <button class="num-btn" data-num="0">0</button>
+        <button class="num-btn submit-btn" id="submit-btn">✓</button>
+      </div>
+
+      <p class="error-msg" id="error-msg">Coba inget-inget lagi tanggal jadian kita, ya! 🥺</p>
+    </div>
+  </div>
+
+  <!-- ===== SCREEN 2: GIFT BOX ANIMATION ===== -->
+  <div id="giftbox-screen" class="screen">
+    <div class="flower-explosion-bg" id="flower-explosion-bg"></div>
+
+    <div class="giftbox-container" id="giftbox-container">
+      <div class="giftbox" id="giftbox">
+        <div class="box-lid" id="box-lid">
+          <div class="lid-ribbon"></div>
+          <div class="lid-bow">
+            <div class="bow-left"></div>
+            <div class="bow-right"></div>
+            <div class="bow-knot"></div>
+          </div>
+        </div>
+        <div class="box-body">
+          <div class="box-ribbon-v"></div>
+          <div class="box-ribbon-h"></div>
+        </div>
+      </div>
+      <p class="giftbox-text" id="giftbox-text">iniii buat guennn... 🎁</p>
+    </div>
+  </div>
+
+  <!-- ===== SCREEN 3: MAIN CONTENT ===== -->
+  <div id="main-screen" class="screen">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-flowers">
+        <!-- Left Side Flowers -->
+        <div class="hf-wrap hfw1">
+          <img src="flower1.png" class="hf-png hfp1" alt="" aria-hidden="true" draggable="false" />
+        </div>
+        <div class="hf-wrap hfw3">
+          <img src="flower3.png" class="hf-png hfp3" alt="" aria-hidden="true" draggable="false" />
+        </div>
+        <div class="hf-wrap hfw5">
+          <img src="flowercherry blossom tree branch.png" class="hf-png hfp5" alt="" aria-hidden="true"
+            draggable="false" />
+        </div>
+
+        <!-- Right Side Flowers -->
+        <div class="hf-wrap hfw2">
+          <img src="flower2.png" class="hf-png hfp2" alt="" aria-hidden="true" draggable="false" />
+        </div>
+        <div class="hf-wrap hfw4">
+          <img src="flowerwhite.png" class="hf-png hfp4" alt="" aria-hidden="true" draggable="false" />
+        </div>
+        <div class="hf-wrap hfw6">
+          <img src="flower1.png" class="hf-png hfp6" alt="" aria-hidden="true" draggable="false" />
+        </div>
+      </div>
+      <div class="hero-content reveal">
+        <h1 class="hero-title">kenangan adit dan guenn</h1>
+        <p class="hero-subtitle">semogaa guen sukaa 🌸</p>
+        <div class="scroll-hint">
+          <span>Scroll ke bawahh</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider">
+      <div class="tape tape-pink"></div>
+    </div>
+
+    <!-- ===== PHOTO GALLERY SECTION ===== -->
+    <section class="photo-section" id="photo-section">
+      <!-- Background aesthetic newspaper scraps -->
+      <img src="koran1.png" class="bg-scrap scrap-1" alt="" aria-hidden="true" />
+      <img src="koran2.png" class="bg-scrap scrap-2" alt="" aria-hidden="true" />
+      <img src="koran-torn-paper-ripped-paper-border-frame_32067650.png" class="bg-scrap scrap-3" alt=""
+        aria-hidden="true" />
+      <img src="koran1.png" class="bg-scrap scrap-4" alt="" aria-hidden="true" />
+
+      <div class="section-header reveal">
+        <h2 class="section-title">Kenangan foto foto</h2>
+        <p class="section-desc">kumpulan my foto gweh n my bini :3</p>
+      </div>
+
+      <!-- SCRAPBOOK BOARD -->
+      <div class="scrapbook-board reveal reveal-board-1" id="board-1-container">
+
+        <!-- Paper texture layers (pure CSS) -->
+        <div class="paper-ruled" aria-hidden="true"></div>
+        <div class="paper-margin" aria-hidden="true"></div>
+        <div class="paper-handwriting" aria-hidden="true">
+          <p>My dearest love, every moment with you is a treasure I hold close to my heart... the way you laugh, the way
+            you look at me... I never want to forget any of it. You are my favourite everything.</p>
+          <p>lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u
+            guen
+            lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen</p>
+          <p>In your arms I found my home, in your eyes I found my forever... I love you more than words could ever say,
+            more than the stars in the sky. Always and forever, only you.</p>
+          <p>My dearest love, every moment with you is a treasure I hold close to my heart... the way you laugh, the way
+            you look at me... I never want to forget any of it. You are my favourite everything.</p>
+          <p>lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u
+            guen
+            lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen</p>
+          <p>In your arms I found my home, in your eyes I found my forever... I love you more than words could ever say.
+            Always and forever, only you.</p>
+          <p>My dearest love, every moment with you is a treasure I hold close to my heart... You are my favourite
+            everything. Je t'aime toujours. Always and forever.</p>
+          <p>lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u
+            guen
+            lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen lov u guen</p>
+          <p>In your arms I found my home, in your eyes I found my forever... the way you laugh, the way you look at
+            me... I never want to forget any of it.</p>
+          <p>My dearest love, every moment with you is a treasure... Je t'aime toujours. Always. Only you. Forever
+            yours.</p>
+        </div>
+
+        <!-- Decorative Elements -->
+
+        <!-- Pink Bow top-left -->
+        <div class="deco-bow" aria-hidden="true">
+          <div class="bow-loop bow-left"></div>
+          <div class="bow-loop bow-right"></div>
+          <div class="bow-knot"></div>
+          <div class="bow-tail bow-tail-l"></div>
+          <div class="bow-tail bow-tail-r"></div>
+        </div>
+
+        <!-- Vintage Stamp -->
+        <div class="deco-stamp" aria-hidden="true">
+          <div class="stamp-inner">💌</div>
+        </div>
+
+        <!-- Heart sticker -->
+        <div class="deco-heart" aria-hidden="true">💗</div>
+
+        <!-- Quote card -->
+        <div class="deco-quote" aria-hidden="true" style="top: 26%; left: 37.5%;">
+          <span>"tau ga kamu guen?<br>me sangat amat<br>cintaaaa dan<br>sayangg banget sama kamu :D"</span>
+        </div>
+
+        <!-- Flower PNG decorations (flower1.png, flower2.png, flower3.png) -->
+        <img src="flower1.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false" />
+        <img src="flower2.png" alt="" class="deco-flowers deco-flowers2" aria-hidden="true" draggable="false"
+          style="top: 25%; right: 4%;" />
+        <img src="flower3.png" alt="" class="deco-flowers deco-flowers3" aria-hidden="true" draggable="false" />
+
+        <!-- Torn paper tag bottom-right -->
+        <div class="deco-torn-tag" aria-hidden="true">
+          <span>-----------<br>-----------</span>
+        </div>
+
+        <!-- Newspaper clipping right side -->
+        <div class="deco-clipping" aria-hidden="true">
+          <p>lov u guennn, lov lov yang banyak</p>
+          <p>umm apa lagi yaa, jir bingung isi apa</p>
+          <p>gatau si, yaudah gueeennnn</p>
+          <p>pokoknyaaaaaa i am</p>
+          <p>gweh love you so muchhhh, mwahhh</p>
+        </div>
+
+        <!-- ═ 8 Photos freely scattered ═ -->
+
+        <!-- Photo 1: Large, top-left, rot -6deg -->
+        <div class="polaroid sb-photo sb-p1 sb-gingham" id="polaroid-1">
+          <div class="polaroid-img-wrap">
+            <video src="fotofirst.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="polaroid-caption">momen potobut pertama kita 📸</div>
+        </div>
+
+        <!-- Photo 2: Medium, top-center-left, rot +4deg -->
+        <div class="polaroid sb-photo sb-p2" id="polaroid-2">
+          <div class="polaroid-img-wrap">
+            <img src="pap1.jpeg" alt="pap pertama guenn" />
+          </div>
+          <div class="polaroid-caption">pap pertama guenn💕</div>
+        </div>
+
+        <!-- Photo 3: Small, top-center, rot -2deg, gingham -->
+        <div class="polaroid sb-photo sb-p3 sb-gingham" id="polaroid-3">
+          <div class="polaroid-img-wrap">
+            <img src="fotbar1.jpeg" alt="fotbar pertama kitaa" />
+          </div>
+          <div class="polaroid-caption">fotbar pertama kitaa 🤩</div>
+        </div>
+
+        <!-- Photo 4: Medium, top-right, rot +7deg -->
+        <div class="polaroid sb-photo sb-p4" id="polaroid-4">
+          <div class="polaroid-img-wrap">
+            <img src="guenblonde.jpeg" alt="guen blondee" />
+          </div>
+          <div class="polaroid-caption">guen blondee</div>
+        </div>
+
+        <!-- Photo 5: Large, bottom-left, rot -4deg, gingham -->
+        <div class="polaroid sb-photo sb-p5 sb-gingham" id="polaroid-5">
+          <div class="polaroid-img-wrap">
+            <img src="wartegmomen.jpeg" alt="warkop momen" />
+          </div>
+          <div class="polaroid-caption">warkop momen ☕</div>
+        </div>
+
+        <!-- Photo 6: Medium, bottom-center, rot +5deg -->
+        <div class="polaroid sb-photo sb-p6" id="polaroid-6">
+          <div class="polaroid-img-wrap">
+            <img src="hormat.jpeg" alt="hormat ketua" />
+          </div>
+          <div class="polaroid-caption">hormat ketua 🫡</div>
+        </div>
+
+        <!-- Photo 7: Medium, bottom-center-right, rot -3deg -->
+        <div class="polaroid sb-photo sb-p7" id="polaroid-7">
+          <div class="polaroid-img-wrap">
+            <img src="stiker1.jpeg" alt="before di spam stiker" />
+          </div>
+          <div class="polaroid-caption">before di spam stiker</div>
+        </div>
+
+        <!-- Photo 8: Small, bottom-right, rot +3deg -->
+        <div class="polaroid sb-photo sb-p8" id="polaroid-8">
+          <div class="polaroid-img-wrap">
+            <img src="stiker2.jpeg" alt="after" />
+          </div>
+          <div class="polaroid-caption">afterr... 😍💕🥰</div>
+        </div>
+
+        <!-- Photo 9: Large, middle-right, rot +4deg — area kanan kosong -->
+        <div class="polaroid sb-photo sb-p9 sb-gingham" id="polaroid-9">
+          <div class="polaroid-img-wrap">
+            <img src="blonde1.jpeg" alt="MY BLONDE GWEH" />
+          </div>
+          <div class="polaroid-caption">MY BLONDE GWEH 💗</div>
+        </div>
+
+        <!-- Foto Baru dihapus -->
+
+      </div><!-- end .scrapbook-board 1 -->
+
+      <!-- SCRAPBOOK BOARD 2 (Lebih banyak foto, letak lebih acak) -->
+      <div class="scrapbook-board sb-board-newspaper reveal" style="margin-top: 40px;">
+        <!-- Paper texture layers (pure CSS) -->
+        <div class="paper-ruled" aria-hidden="true"></div>
+        <div class="paper-margin" aria-hidden="true"></div>
+        <div class="paper-handwriting" aria-hidden="true">
+          <p>Every glance, every touch, every word... it's all etched in my mind. You make ordinary days feel
+            extraordinary.</p>
+          <p>I find myself smiling for no reason, just thinking about you. Your presence is my favorite comfort.</p>
+          <p>This is where I keep our most precious memories, safe and sound. A collection of our beautiful journey.</p>
+          <p>Waktu seakan berhenti saat aku bersamamu. Setiap detik berharga, setiap tawa adalah melodi terindah.</p>
+          <p>In the chaos of this world, you are my serene escape. My anchor, my safe haven, my everything.</p>
+          <p>Hanya dengan melihat wajahmu, semua lelahku sirna. You are the magic in my everyday life.</p>
+          <p>I promise to cherish these moments, to add more pages to our story, to love you endlessly.</p>
+          <p>Setiap foto ini punya cerita, punya rasa, punya kita. I'm so grateful for every memory we've made.</p>
+          <p>Looking forward to a thousand more smiles, a million more memories, and a lifetime with you.</p>
+          <p>Je t'aime. I love you. Aku mencintaimu. Dalam setiap bahasa, perasaanku tetap sama. Always.</p>
+        </div>
+
+        <!-- Decorative Elements for Board 2 -->
+        <!-- Vintage Stamps scattered -->
+        <div class="deco-stamp" aria-hidden="true" style="top: 80%; left: 88%; transform: rotate(-15deg); z-index: 8;">
+          <div class="stamp-inner">💖</div>
+        </div>
+        <div class="deco-stamp" aria-hidden="true"
+          style="top: 3%; left: 88%; transform: rotate(25deg); opacity: 0.8; filter: hue-rotate(45deg); z-index: 8;">
+          <div class="stamp-inner">✨</div>
+        </div>
+        <div class="deco-stamp" aria-hidden="true"
+          style="top: 36%; left: 4%; transform: rotate(-10deg); opacity: 0.85; z-index: 8;">
+          <div class="stamp-inner">💌</div>
+        </div>
+
+        <!-- Quote cards -->
+        <div class="deco-quote" aria-hidden="true"
+          style="top: 75%; left: 5%; transform: rotate(6deg); width: 170px; border-left-color: #d4788e; z-index: 8;">
+          <span>"gueenn plis jangan ilang yaaaaa 🥺❤️"</span>
+        </div>
+        <div class="deco-quote" aria-hidden="true"
+          style="top: 78%; left: 74%; transform: rotate(-8deg); width: 150px; border-left-color: #b5526a; z-index: 8;">
+          <span>"me sangat amat sayang guenn✨"</span>
+        </div>
+        <div class="deco-quote" aria-hidden="true"
+          style="top: 25%; right: 4%; left: auto; transform: rotate(-12deg); width: 130px; border-left-color: #e8789a; z-index: 8;">
+          <span>"first time dateng acara kabaret guen"</span>
+        </div>
+
+        <!-- Emojis and Sparkle Sticker layers for extra festiveness -->
+        <div class="deco-heart" style="top: 15%; left: 52%; font-size: 2.2rem; transform: rotate(15deg); z-index: 9;">💖
+        </div>
+        <div class="deco-heart" style="top: 48%; left: 3%; font-size: 1.8rem; transform: rotate(-15deg); z-index: 9;">🌸
+        </div>
+        <div class="deco-heart" style="top: 73%; left: 54%; font-size: 2.2rem; transform: rotate(20deg); z-index: 9;">✨
+        </div>
+        <div class="deco-heart" style="top: 50%; left: 91%; font-size: 1.8rem; transform: rotate(-10deg); z-index: 9;">
+          🎀</div>
+        <div class="deco-heart" style="top: 2%; left: 48%; font-size: 2rem; transform: rotate(5deg); z-index: 9;">🧸
+        </div>
+
+        <!-- Flower PNG decorations (Layered carefully with z-index to look premium) -->
+        <!-- Top Left Flower -->
+        <img src="flower1.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false"
+          style="top: -25px; left: -15px; bottom: auto; transform: rotate(45deg); width: 120px; z-index: 9;" />
+        <!-- Top Middle Flower (behind polaroids) -->
+        <img src="flower2.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false"
+          style="top: 8%; left: 45%; bottom: auto; transform: rotate(-30deg); width: 90px; opacity: 0.85; z-index: 3;" />
+        <!-- Center-left Rose Flower (overlaps photos) -->
+        <img src="flower3.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false"
+          style="top: 38%; left: 24%; bottom: auto; transform: rotate(15deg); width: 95px; z-index: 8;" />
+        <!-- Bottom Middle Rose Flower -->
+        <img src="flower3.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false"
+          style="bottom: -20px; left: 32%; transform: rotate(15deg); width: 135px; z-index: 9;" />
+        <!-- Middle Right Flower -->
+        <img src="flower1.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false"
+          style="bottom: 40%; right: -25px; left: auto; transform: rotate(-60deg); width: 110px; z-index: 9;" />
+        <!-- Bottom Right Flower -->
+        <img src="flower2.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false"
+          style="bottom: -20px; right: 18%; left: auto; transform: rotate(80deg); width: 105px; opacity: 0.9; z-index: 9;" />
+
+        <!-- Washi Tape Strips scattered and pinning down polaroids -->
+        <div class="polaroid-tape pt-yellow"
+          style="top: 6%; left: 16%; transform: rotate(-15deg); width: 75px; z-index: 8;"></div>
+        <div class="polaroid-tape pt-pink"
+          style="top: 2%; left: 35%; transform: rotate(20deg); width: 70px; z-index: 8;"></div>
+        <div class="polaroid-tape pt-yellow"
+          style="top: 8%; left: 78%; transform: rotate(-10deg); width: 65px; z-index: 8;"></div>
+        <div class="polaroid-tape pt-white"
+          style="top: 48%; left: 18%; transform: rotate(15deg); width: 70px; z-index: 8;"></div>
+        <div class="polaroid-tape pt-pink"
+          style="top: 45%; left: 48%; transform: rotate(-5deg); width: 75px; z-index: 8;"></div>
+        <div class="polaroid-tape pt-yellow"
+          style="top: 46%; left: 76%; transform: rotate(12deg); width: 70px; z-index: 8;"></div>
+
+        <!-- Newspaper clipping -->
+        <div class="deco-clipping" aria-hidden="true"
+          style="top: 6%; right: auto; left: 54%; transform: rotate(8deg); width: 145px; z-index: 3;">
+          <p>GUENN PENCET FOTO FOTONYAAAAAA</p>
+          <p>NANTI BISA MUNCUL TULISANNNN</p>
+          <p>BURUUUUUU PENCETTTTT!!!!!</p>
+          <p>DIBELAKANGNYA ADA TULISAN !!</p>
+        </div>
+
+
+        <!-- ═ 6 New Photos freely scattered (Chaotic collage but highly aesthetic) ═ -->
+        <!-- Photo 10 (Fokus Utama - Kiri Atas - Real Photo) -->
+        <div class="polaroid sb-photo sb-p10 sb-gingham flippable-polaroid" id="polaroid-10">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="polaroid-img-wrap">
+                <img src="cantikbgt.jpeg" alt="Guen cantik banget" />
+              </div>
+              <div class="polaroid-caption">SUMPAH INI CANTIK BGT🌸</div>
+              <div class="flip-hint">tap 💌</div>
+            </div>
+            <div class="polaroid-back">
+              <div class="polaroid-back-content">
+                <div class="polaroid-back-date">GUEN CAKEP BGT</div>
+                <div class="polaroid-back-text">gatau kenapa nihh foto aku suka banget liatnya, saking
+                  sukanya aku sampe jadiin wallpaper hp akuu💕</div>
+                <div class="polaroid-back-signature">Adit n Guen ✨</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 11 (Tengah Atas) -->
+        <div class="polaroid sb-photo sb-p11 flippable-polaroid" id="polaroid-11">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="polaroid-img-wrap">
+                <div class="polaroid-img-wrap">
+                  <img src="DU.jpeg" alt="bjurka" />
+                </div>
+              </div>
+              <div class="polaroid-caption">bjurka <img src="boneka.jpg" class="bjorka-doll" alt="boneka bjorka" />
+              </div>
+              <div class="flip-hint">tap 🧸</div>
+            </div>
+            <div class="polaroid-back">
+              <div class="polaroid-back-content">
+                <div class="polaroid-back-date">Bjurka & Guen</div>
+                <div class="polaroid-back-text">di foto inii harusnya ada bjurka nya jugaa cuman aku masukin nyaa yang
+                  lagi gaada aihh,
+                  tapi si bjurkanya tuhh aku tambahin di sebelah tulisannya heheh 🧸❤️</div>
+                <div class="polaroid-back-signature">Adit n Guen ✨</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 12 (Kanan Atas) -->
+        <div class="polaroid sb-photo sb-p12 sb-gingham flippable-polaroid" id="polaroid-12">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="polaroid-img-wrap">
+                <div class="polaroid-img-wrap">
+                  <video src="kabaretgif.mp4" autoplay loop muted playsinline></video>
+                </div>
+              </div>
+              <div class="polaroid-caption">guen kabarett</div>
+              <div class="flip-hint">tap 🎭</div>
+            </div>
+            <div class="polaroid-back">
+              <div class="polaroid-back-content">
+                <div class="polaroid-back-date">Momen Kabaret 🎭</div>
+                <div class="polaroid-back-text">me sangat amat bangga bgtt ama guen pas ngeliat kamu di acara kabaret,
+                  ini first time nya aku liat kamu showw & aku bener bener excited 👑✨</div>
+                <div class="polaroid-back-signature">Adit n Guen ✨</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 13 (Kiri Bawah) -->
+        <div class="polaroid sb-photo sb-p13 flippable-polaroid" id="polaroid-13">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="polaroid-img-wrap">
+                <div class="polaroid-img-wrap">
+                  <video src="potobutpaskal.mp4" autoplay loop muted playsinline></video>
+                </div>
+              </div>
+              <div class="polaroid-caption">potobut di paskall 💖</div>
+              <div class="flip-hint">tap 📸</div>
+            </div>
+            <div class="polaroid-back">
+              <div class="polaroid-back-content">
+                <div class="polaroid-back-date">Paskal Hypersquare 📸</div>
+                <div class="polaroid-back-text">Momen potobut kedua kita di Paskal. lucu tauu kamunyaa apalagi
+                  background nya pink pink gituu jadi tambah lucu bgtt keliatannyaa 😍💕</div>
+                <div class="polaroid-back-signature">Adit n Guen ✨</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 14 (Tengah Bawah) -->
+        <div class="polaroid sb-photo sb-p14 sb-gingham flippable-polaroid" id="polaroid-14">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="polaroid-img-wrap">
+                <div class="polaroid-img-wrap">
+                  <img src="badass2.jpeg" alt="badass2" />
+                </div>
+              </div>
+              <div class="polaroid-caption">BADASS BANGET GILS CANTIK</div>
+              <div class="flip-hint">tap 😎</div>
+            </div>
+            <div class="polaroid-back">
+              <div class="polaroid-back-content">
+                <div class="polaroid-back-date">CEWE TERRR-OMGG</div>
+                <div class="polaroid-back-text">asli, disini kamu keliatan yang bener bener cakep pisann mana kaya yang
+                  badass bgt lagii🤫❤️</div>
+                <div class="polaroid-back-signature">Adit n Guen ✨</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 15 (Kanan Bawah) -->
+        <div class="polaroid sb-photo sb-p15 flippable-polaroid" id="polaroid-15">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="polaroid-img-wrap">
+                <div class="polaroid-img-wrap">
+                  <img src="badass1.jpeg" alt="badass1" />
+                </div>
+              </div>
+              <div class="polaroid-caption">CANTIK PISANNNN</div>
+              <div class="flip-hint">tap 🌹</div>
+            </div>
+            <div class="polaroid-back">
+              <div class="polaroid-back-content">
+                <div class="polaroid-back-date">Geulis Pisan 🌹</div>
+                <div class="polaroid-back-text">ahh pokonyaa ga ada kata lain selain geulis pisan! guen tuh gimanapun
+                  kamu selalu
+                  keliatan cakep n sempurna buat aku. Terima kasih yaa sayang udah selalu nemenin aku. Love you! 🥰
+                </div>
+                <div class="polaroid-back-signature">Adit n Guen ✨</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end .scrapbook-board 2 -->
+
+      <!-- SCRAPBOOK BOARD 3: CORKBOARD STYLE (Papan Gabus yang Estetik) -->
+      <div class="scrapbook-board sb-board-corkboard reveal" style="margin-top: 50px;">
+
+        <!-- Corkboard ambient noise/ruled helper layers if needed, or none -->
+        <div class="paper-handwriting" aria-hidden="true" style="padding: 10px 14%;">
+          <p>You and me, writing our own story day by day. Every little moment holds a special place here.</p>
+          <p>Guen, thank you for making my life incredibly beautiful. I love you to the moon and back.</p>
+          <p>Terima kasih ya sayang udah selalu ada, nemenin aku dari awal sampai nanti kita sukses bareng-bareng.</p>
+          <p>I promise to stay by your side, to cherish you, to make you the happiest person in the world.</p>
+          <p>Every laugh, every smile, every cute voice note... it's all captured in my heart forever.</p>
+        </div>
+
+        <!-- Sticky Notes (Catatan Tempel) -->
+        <div class="cork-note cn-yellow" aria-hidden="true"
+          style="top: 52%; left: 42%; transform: rotate(-5deg); width: 145px; z-index: 8;">
+          <span>"Happy Graduation 💕<br>Guen, selamat yaa udaa luluss sukses selalu buat kedepannyaa. I always
+            love gueenn!! ❤️"</span>
+        </div>
+        <div class="cork-note cn-pink" aria-hidden="true"
+          style="top: 25%; left: 56%; transform: rotate(8deg); width: 120px; z-index: 8;">
+          <span>"sayang gueennnnn!! ❤️"</span>
+        </div>
+
+        <!-- Push Pins (📍, 📌) holding polaroids and notes -->
+        <div class="cork-pin" style="top: 6%; left: 16%; z-index: 10;">📍</div>
+        <div class="cork-pin" style="top: 3%; left: 44%; z-index: 10;">📌</div>
+        <div class="cork-pin" style="top: 5%; left: 78%; z-index: 10;">📍</div>
+        <div class="cork-pin" style="top: 48%; left: 26%; z-index: 10;">📌</div>
+        <div class="cork-pin" style="top: 44%; left: 72%; z-index: 10;">📍</div>
+        <div class="cork-pin" style="top: 49%; left: 48%; z-index: 10;">📌</div>
+        <div class="cork-pin" style="top: 21%; left: 61%; z-index: 10;">📍</div>
+
+        <!-- Flower decorations with dried/sepia filters -->
+        <!-- Bottom Left Dried Rose -->
+        <img src="flower3.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false"
+          style="bottom: 5%; left: 3%; width: 110px; transform: rotate(-25deg); filter: sepia(0.55) hue-rotate(-20deg); z-index: 8;" />
+        <!-- Top Right Dried Daisy -->
+        <img src="flower1.png" alt="" class="deco-flowers" aria-hidden="true" draggable="false"
+          style="top: -20px; right: -20px; width: 120px; transform: rotate(45deg); filter: sepia(0.45); z-index: 8;" />
+
+        <!-- ═ 5 New Photos freely scattered (Corkboard collage) ═ -->
+        <!-- Photo 20 (Kiri Atas) -->
+        <div class="polaroid sb-photo sb-p20 sb-gingham" id="polaroid-20">
+          <div class="polaroid-img-wrap">
+            <div class="polaroid-img-wrap">
+              <img src="gradu1.jpeg" alt="gradu1" />
+              <canvas class="scratch-canvas"></canvas>
+            </div>
+          </div>
+          <div class="polaroid-caption">💐💐💐</div>
+        </div>
+
+        <!-- Photo 21 (Tengah Atas) -->
+        <div class="polaroid sb-photo sb-p21" id="polaroid-21">
+          <div class="polaroid-img-wrap">
+            <div class="polaroid-img-wrap">
+              <img src="gradu2.jpeg" alt="gradu2" />
+              <canvas class="scratch-canvas"></canvas>
+            </div>
+          </div>
+          <div class="polaroid-caption">🌼🌺🌷</div>
+        </div>
+
+        <!-- Photo 22 (Kanan Atas) -->
+        <div class="polaroid sb-photo sb-p22 sb-gingham" id="polaroid-22">
+          <div class="polaroid-img-wrap">
+            <div class="polaroid-img-wrap">
+              <img src="gradu3.jpeg" alt="gradu3" />
+              <canvas class="scratch-canvas"></canvas>
+            </div>
+          </div>
+          <div class="polaroid-caption">mee n guenn 🌼</div>
+        </div>
+
+        <!-- Photo 23 (Kiri Bawah) -->
+        <div class="polaroid sb-photo sb-p23" id="polaroid-23">
+          <div class="polaroid-img-wrap">
+            <div class="polaroid-img-wrap">
+              <img src="gradu4.jpeg" alt="gradu4" />
+              <canvas class="scratch-canvas"></canvas>
+            </div>
+          </div>
+          <div class="polaroid-caption">guen dapet banyak hadiahh 🥰</div>
+        </div>
+
+        <!-- Photo 24 (Kanan Bawah) -->
+        <div class="polaroid sb-photo sb-p24 sb-gingham" id="polaroid-24">
+          <div class="polaroid-img-wrap">
+            <div class="polaroid-img-wrap">
+              <img src="gradu5.jpeg" alt="gradu5" />
+              <canvas class="scratch-canvas"></canvas>
+            </div>
+          </div>
+          <div class="polaroid-caption">cermin nyaa kotorr ☹️</div>
+        </div>
+
+      </div><!-- end .scrapbook-board 3 -->
+
+      <div class="vintage-filmstrip-board reveal" style="margin-top: 55px;">
+        <div class="film-flicker-overlay" aria-hidden="true"></div>
+
+        <div class="filmstrip-container">
+          <!-- Main continuous rolling filmstrip -->
+          <div class="filmstrip">
+
+            <!-- Frame 1: Guen Digendong -->
+            <div class="film-frame" id="film-frame-1">
+              <video src="guendigendong.mp4" autoplay loop muted playsinline></video>
+              <div class="frame-num">01 / GENDONG 🧸</div>
+            </div>
+
+            <!-- Frame 2: Guen Graduation -->
+            <div class="film-frame" id="film-frame-2">
+              <video src="guengradu.mp4" autoplay loop muted playsinline></video>
+              <div class="frame-num">02 / GRADU 🎓</div>
+            </div>
+
+            <!-- Frame 3: Guen Jogging -->
+            <div class="film-frame" id="film-frame-3">
+              <video src="guenjogging.mp4" autoplay loop muted playsinline></video>
+              <div class="frame-num">03 / JOGGING 🏃🏻‍♀️</div>
+            </div>
+
+            <!-- Frame 4: Guen Ngetik -->
+            <div class="film-frame" id="film-frame-4">
+              <video src="guenngetikkayaibu2.mp4" autoplay loop muted playsinline></video>
+              <div class="frame-num">04 / TYPING 👵🏻</div>
+            </div>
+
+          </div><!-- end .filmstrip -->
+
+          <!-- Diary comments layout (torn memo pads taped with washi tape) -->
+          <div class="film-notes-grid">
+
+            <!-- Note 1 -->
+            <div class="film-note-card fn-c1">
+              <div class="fn-date">gueen digendong 🧸</div>
+              <div class="fn-text">jujur ini rasanya seruu banget tapi emang kerasaa capenya karenaa mungkin akunyage
+                lagi capee, tapii apasihh yang engga buat guenn 💕</div>
+            </div>
+
+            <!-- Note 2 -->
+            <div class="film-note-card fn-c2">
+              <div class="fn-date">graduation guen 🎓</div>
+              <div class="fn-text">Selamat graduation pacar gwehhh! Cantik bangett outfit kamu disituu aku sukaa. sukses
+                teruss yaa sayangg kedepanyaa! 🌟🎓</div>
+            </div>
+
+            <!-- Note 3 -->
+            <div class="film-note-card fn-c3">
+              <div class="fn-date">jogging podomoro 🏃🏻‍♀️</div>
+              <div class="fn-text">first time aku jogging bareng guen, pengen lagii anjayy kita harus sering sering yaa
+                jogingg! 🏃🏻‍♀️💚</div>
+            </div>
+
+            <!-- Note 4 -->
+            <div class="film-note-card fn-c4">
+              <div class="fn-date">typing guen kaya ibu ibu 👵🏻</div>
+              <div class="fn-text">sumpah ini apasih aku nemu di galeri, lucu bgt anjrrr kaya ibu ibuuuu 😂❤️</div>
+            </div>
+
+          </div><!-- end .film-notes-grid -->
+
+        </div><!-- end .filmstrip-container -->
+
+      </div><!-- end .vintage-filmstrip-board -->
+    </section>
+
+
+    <!-- Divider -->
+    <div class="section-divider">
+      <div class="tape tape-pink"></div>
+    </div>
+
+
+    <!-- ===== AUDIO PLAYER SECTION ===== -->
+    <section class="content-section audio-section" id="audio-section">
+      <!-- Background aesthetic newspaper scrap -->
+      <img src="koran-torn-paper-ripped-paper-border-frame_32067650.png" class="audio-bg-scrap" alt=""
+        aria-hidden="true" />
+
+      <div class="section-header reveal">
+        <h2 class="section-title">🎵 Suara favorit akuu</h2>
+        <p class="section-desc">AKU SUKA BANGETT DENGER VOICE NOTE INI GUENNN</p>
+      </div>
+
+      <div class="audio-card reveal" id="audio-card">
+        <div class="audio-washi-tape">🎀</div>
+        <div class="audio-art">
+          <div class="audio-vinyl" id="audio-vinyl">
+            <div class="vinyl-inner">🎵</div>
+          </div>
+        </div>
+        <div class="audio-info">
+          <p class="audio-label">Voice Note</p>
+          <h3 class="audio-title">MBG Buahlil 🍑</h3>
+          <p class="audio-subtitle">guenn teken play nyaaa</p>
+        </div>
+
+        <div class="audio-controls">
+          <div class="audio-progress-container">
+            <div class="audio-time-display">
+              <span id="current-time">0:00</span>
+              <span id="total-time">0:00</span>
+            </div>
+            <div class="audio-progress-bar" id="audio-progress-bar">
+              <div class="audio-progress-fill" id="audio-progress-fill"></div>
+              <div class="audio-progress-thumb" id="audio-progress-thumb"></div>
+            </div>
+          </div>
+
+          <div class="audio-btn-row">
+            <button class="audio-btn" id="play-btn" aria-label="Play / Pause">
+              <span class="play-icon">▶</span>
+            </button>
+          </div>
+        </div>
+
+        <audio id="audio-player" preload="metadata">
+          <source src="Her Voice.mp3" type="audio/mpeg" />
+        </audio>
+
+        <div class="audio-note">
+          <p>💌 Klik tombol ▶ untuk mendengarkan :D</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BUCKET LIST / PROMISE SECTION ===== -->
+    <section class="content-section bucket-section" id="bucket-section">
+      <!-- Floating/Swaying Scrapbook Ornaments -->
+      <div class="scrap-hanging-string hanging-left" aria-hidden="true">
+        <div class="hanging-line"></div>
+        <div class="hanging-card hc-1">
+          <span class="hc-pin">📌</span>
+          <img src="flower1.png" alt="" />
+        </div>
+        <div class="hanging-card hc-2">
+          <span class="hc-pin">📍</span>
+          <div class="hc-inner">
+            <span class="hc-emoji">💖</span>
+            <span class="hc-text">Adit & Guen</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrap-hanging-string hanging-right" aria-hidden="true">
+        <div class="hanging-line"></div>
+        <div class="hanging-card hc-3">
+          <span class="hc-pin">📌</span>
+          <img src="guenhelm.jpeg" alt="" />
+        </div>
+        <div class="hanging-card hc-4">
+          <span class="hc-pin">📍</span>
+          <div class="hc-inner">
+            <span class="hc-emoji">🧸</span>
+            <span class="hc-text">LIST DATEE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header reveal">
+        <h2 class="section-title">📌 List Papan Kegiatan</h2>
+        <p class="section-desc">Ayoo kita selesain satu per satuu tujuan date kitaa 🌸</p>
+      </div>
+
+      <!-- BULLETIN BOARD -->
+      <div class="bucket-board reveal" id="bucket-board">
+        <!-- Bulletin Title Tag -->
+        <div class="board-title-tag">LIST DATE ACTIVITY ADIT & GUEN 🧸🫶🏻💃🏻</div>
+
+        <!-- Card 1: Tahura (Completed) -->
+        <div class="bucket-item p-rot-neg3 stamped established">
+          <div class="push-pin pink-pin">📌</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">1. Tahura 🌲🍃</h3>
+            <p class="bucket-item-desc">Jalan-jalan santai bareng guen keliling hutan, tapi sayang banget euyy kemarin
+              kita ga sampee ke curugnya, next lah yaa! 🌲💚</p>
+            <a href="https://maps.app.goo.gl/24YmQigrxYzLizoZ8" target="_blank" class="maps-badge">📍 Tahura Pinus</a>
+            <div class="stamp-seal">
+              <span class="stamp-label">DONE !!</span>
+              <span class="stamp-heart">✅</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Painting (Uncompleted) -->
+        <div class="bucket-item p-rot-pos3">
+          <div class="bucket-item-tape"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">2. Painting 🫟🎨</h3>
+            <p class="bucket-item-desc">ngelukis bareng kamu di kafe estetik atau gaa di tempat tenang sambil bengong n
+              ngobrol
+              santai 🎨✨</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Playground (Uncompleted) -->
+        <div class="bucket-item p-rot-pos1">
+          <div class="push-pin green-pin">📍</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">3. Playground ✨🪅🎈</h3>
+            <p class="bucket-item-desc">Main seru-seruan bareng guen! Ayoo ataugaa ajak anak-anak lainnya biar makin
+              rame n
+              seru 🎈</p>
+            <div class="maps-group" style="display:flex; flex-wrap:wrap; gap:4px; margin-top:6px;">
+              <a href="https://maps.app.goo.gl/uiPtAtMY2iPvTY5s6" target="_blank" class="maps-badge">📍 Cimahi 😥</a>
+              <a href="https://maps.app.goo.gl/p3D468gdL5UdxHVR8" target="_blank" class="maps-badge">📍 Paskal</a>
+              <a href="https://maps.app.goo.gl/Q145C16ZeTTDMoUL7" target="_blank" class="maps-badge">📍 Kiara</a>
+              <a href="https://maps.app.goo.gl/YjYxbLc5XnPbk4ew6" target="_blank" class="maps-badge">📍 Trampolin
+                Kiara</a>
+            </div>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Roller Skate (Uncompleted) -->
+        <div class="bucket-item p-rot-neg1">
+          <div class="bucket-item-tape tape-yellow"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">4. Roller skate 🪩🛼</h3>
+            <p class="bucket-item-desc">kitaa main roller skate barengg! 🛼💞</p>
+            <div class="maps-group" style="display:flex; flex-wrap:wrap; gap:4px; margin-top:6px;">
+              <a href="https://maps.app.goo.gl/6xmv7NzBFC6YVHmN7" target="_blank" class="maps-badge">📍 Roller Rink</a>
+              <a href="https://maps.app.goo.gl/T9vb5JJHjMzms39D9" target="_blank" class="maps-badge">📍 Klandestin</a>
+            </div>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Pottery Class (Uncompleted) -->
+        <div class="bucket-item p-rot-neg4">
+          <div class="push-pin pink-pin">📌</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">5. Pottery Class ⚱️🏺</h3>
+            <p class="bucket-item-desc">Bikin kerajinan tanah liat berduaa. 🏺❤️</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Picnic (Uncompleted) -->
+        <div class="bucket-item p-rot-pos5">
+          <div class="bucket-item-tape tape-white"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">6. Picnic 🧺🍵🍪</h3>
+            <p class="bucket-item-desc">PENGEN BANGETT PIKNIK BARENG GUENNN, nantii disana kita nikmatin cemilan manis n
+              mungkin teh hangat
+              sambil cerita ceirta deeptalkk. 🧺🍪</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: Workshop (Uncompleted) -->
+        <div class="bucket-item p-rot-neg6">
+          <div class="push-pin green-pin">📍</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">7. Ikut workshop 📚💡</h3>
+            <p class="bucket-item-desc">kayanyaa ini bakal menantang, kata guenn ini bakal menambah wawasan n
+              pengalaman baru kitaa! 💡🎓</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8: Trekking CIC (Uncompleted) -->
+        <div class="bucket-item p-rot-pos8">
+          <div class="bucket-item-tape"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">8. Trekking CIC Parongpong ⛰️</h3>
+            <p class="bucket-item-desc">ini seruu sihh ke alam lagii, ayooooo aku suka bangett ke alam alam giniii ⛰️🌿
+            </p>
+            <a href="https://maps.app.goo.gl/9mEsdQhHAp5X2vFr9" target="_blank" class="maps-badge">📍 CIC Parongpong</a>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9: Wahoo (Completed) -->
+        <div class="bucket-item p-rot-neg1 stamped established">
+          <div class="push-pin pink-pin">📌</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">9. WAHOO 🏊🏻‍♀️🥽🛝</h3>
+            <p class="bucket-item-desc">kitaa ke waterboom bareng sipaa n fathirr, seru banget! 🏊🏻‍♀️💦</p>
+            <a href="https://maps.app.goo.gl/Fpi88mgaM5Sf4omg6" target="_blank" class="maps-badge">📍 Wahoo
+              Waterworld</a>
+            <div class="stamp-seal">
+              <span class="stamp-label">DONE !!</span>
+              <span class="stamp-heart">✅</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10: Berendam Air Panas (Uncompleted) -->
+        <div class="bucket-item p-rot-pos3">
+          <div class="bucket-item-tape tape-yellow"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">10. Berendam Air Panas 💆🏻‍♀️💆🏻</h3>
+            <p class="bucket-item-desc">kitaa berendam dii ciater nanti okeyyy, This really makes us relax, OMGG!
+              💆🏻‍♀️💆🏻</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11: Mancing (Uncompleted) -->
+        <div class="bucket-item p-rot-neg3">
+          <div class="push-pin blue-pin">📍</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">11. Mancing 🎣🐟🐠</h3>
+            <p class="bucket-item-desc">MANCIJNG??? OMG AYOO TAPI DIMANA BTWW WKWKWKWW🎣🐠</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12: Zoo (Uncompleted) -->
+        <div class="bucket-item p-rot-pos1">
+          <div class="bucket-item-tape tape-white"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">12. ZOO 🦧🍎</h3>
+            <p class="bucket-item-desc">inii seru nihh harus bangett kita ke kebun binatang dan negliat hewan hewan
+              barengg (feeling gue sih ntar kalo ketemu monyet pasti gue di sama samain 🙄)🦧🍎</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 13: De Landden (Uncompleted) -->
+        <div class="bucket-item p-rot-neg4">
+          <div class="push-pin green-pin">📌</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">13. De Landden 🏰🦌</h3>
+            <p class="bucket-item-desc">jalan-jalan santai menikmati tempat
+              wisatanya, n asyiknyaa kitaa bisa ngasih makan langsung ke hewan-hewan di sana! (1 jam perjalanan tapi
+              worth it!) 🏰🦌
+            </p>
+            <a href="https://maps.app.goo.gl/7ZV8HUVwiXW93dnp9" target="_blank" class="maps-badge">📍 De Landden</a>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 14: Museum (Uncompleted) -->
+        <div class="bucket-item p-rot-pos5">
+          <div class="bucket-item-tape"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">14. Museum 🏛️✨</h3>
+            <p class="bucket-item-desc">Hunting foto estetik n keliling nikmatin karya seni ataugaa sejarah legendaris
+              di
+              museum klasik dii Bandung. 🏛️✨</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 15: Nonton Kabaret (Completed) -->
+        <div class="bucket-item p-rot-neg6 stamped established">
+          <div class="push-pin pink-pin">📍</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">15. Nonton Kabarett ✨🎭</h3>
+            <p class="bucket-item-desc">momen first time akuu nonton penampilan kabaret kamuu, senengg deh bisa liat
+              kamu tampill ehehehe🎭👑</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">DONE !!</span>
+              <span class="stamp-heart">✅</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 16: Pantai (Uncompleted) -->
+        <div class="bucket-item p-rot-pos8">
+          <div class="bucket-item-tape tape-yellow"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">16. PANTAII 🌊🌅</h3>
+            <p class="bucket-item-desc">AYOOOOOOOOO DUDUK DI PINGGIR PANTAI SAMBIL CERITA CERITA DEEPTALK🌅🎧</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 17: Konser (Uncompleted) -->
+        <div class="bucket-item p-rot-neg3">
+          <div class="push-pin blue-pin">📌</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">17. KONSER 🎶🎟️</h3>
+            <p class="bucket-item-desc">ayoo kita nonton konser, ini cukup spesial kesannya karena ini first experience
+              kamuu dan juga akuu 🎤🎟️</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">JANJI!</span>
+              <span class="stamp-heart">❤️</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 18: Saparua (Completed) -->
+        <div class="bucket-item p-rot-pos3 stamped established">
+          <div class="bucket-item-tape tape-white"></div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">18. Saparua 🏟️✨</h3>
+            <p class="bucket-item-desc">Jalan jalan sambil jajan makanan enakk, dan juga kita beli gelang couple kemarin
+              disinii 🏟️🍃</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">DONE !!</span>
+              <span class="stamp-heart">✅</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 19: jogging (Completed) -->
+        <div class="bucket-item p-rot-neg1 stamped established">
+          <div class="push-pin pink-pin">📍</div>
+          <div class="bucket-card-content">
+            <h3 class="bucket-item-title">19. Jogging 🏃🏻‍♀️🏃🏻</h3>
+            <p class="bucket-item-desc">ini kita harus lakuin rutin yaaa paling gaa sebulan sekali adalahh, walau kita
+              udah pernah jugaa 🏃🏻‍♀️🏃🏻💚</p>
+            <div class="stamp-seal">
+              <span class="stamp-label">DONE !!</span>
+              <span class="stamp-heart">✅</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== LOVE LETTER SECTION ===== -->
+    <section class="content-section letter-section" id="letter-section">
+      <!-- Background aesthetic newspaper scraps -->
+      <img src="koran1.png" class="bg-scrap letter-scrap-1" alt="" aria-hidden="true" />
+      <img src="koran2.png" class="bg-scrap letter-scrap-2" alt="" aria-hidden="true" />
+
+      <div class="section-header reveal">
+        <h2 class="section-title">💌 Surat buat Guen</h2>
+        <p class="section-desc">Pencet amplopnya buat buka surat pesan dari aku... 🌸</p>
+      </div>
+
+      <!-- INTERACTIVE ENVELOPE -->
+      <div class="envelope-container reveal" id="envelope-container">
+        <div class="envelope-tape">💌</div>
+        <div class="envelope" id="interactive-envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-paper-preview"></div>
+          <div class="envelope-front"></div>
+          <div class="wax-seal" id="wax-seal">
+            <span class="seal-heart">💖</span>
+            <span class="seal-text"></span>
+          </div>
+        </div>
+        <div class="envelope-hint">Guenn Klik buat buka suratnyaa 🌸</div>
+      </div>
+
+      <!-- MAGICAL FULL-SCREEN LETTER DIARY (MODAL) -->
+      <div class="letter-modal" id="letter-modal">
+        <div class="letter-modal-overlay" id="letter-modal-overlay"></div>
+        <div class="letter-modal-content">
+          <div class="letter-card reveal-letter-card" id="modal-letter-card">
+            <div class="letter-tape"></div>
+            <div class="letter-stamp">💌</div>
+            <div class="letter-lines"></div>
+            <div class="letter-content">
+              <p class="letter-opening">Untuk Guenn, my pacar gweh yang paling cakepp dan muanisss 💖</p>
+              <p class="letter-body">
+                Pertama-tama, aku pengen kamu tau betapa bersyukurnya aku bisaa milikin kamu. Berusaha bisa terus ada
+                buat guen, cerita cerita bareng guen, dan ngabisin waktu bareng kamu itu suatu kebahagiaan terbesar buat
+                aku. Kamu tuh bikin hidup aku jadi terasa berbeda dan banyak perkembangan baik dalam hidup aku karenamu
+                .Kamu bikin segalanya terasa lebih mudah dan setiap hari yang kulalui bersama guen jadii penuh lebih
+                berwarna
+                . Akuu sangat, sangat bahagia bisa menjadi bagian dari hidupmuu gueenn.
+              </p>
+              <p class="letter-body">
+                Tapii aku juga tahu, aku bukanlah orang yang sempurna, dan juga mungkin aku bukan orang seperti yang
+                kamu
+                mau. Akuu mau minta maaf dengan tulus darii hati aku buat segala
+                kesalahan apapun yang telah berlalu, ntah itu pure dari kesalahan karena aku ataupun kesalahpahaman dari
+                kita yang sering aku perbuat hingga membuatmu marah besar ataupun
+                sedih. Maaf karena terkadang aku belum bisa menjadi seperti yang kamu harapkan, tapi percayalah, aku
+                selalu berusaha untuk
+                belajar menjadi lebih baik lagi buatmu guenn.
+              </p>
+              <p class="letter-body">
+                Akuu berterima kasih bangett sama kamu guenn. Terima kasih karena kamu udah
+                selalu untuk bersabar menghadapiku, selalu nerima aku gimanapun, dan kamu selalu maafin
+                kesalahan kesalahan aku yang telah berlalu, semoga kamu gaa bosen bosen yaa buat maafin akuu heheh.
+                Pokoknyaa makasihh yaa buat semuanyaa gueenn, aku bakal terus berusaha menjadi yang terbaik buat kamu
+                guenn✨
+              </p>
+              <p class="letter-closing">Dengan sepenuh hati,<br />
+                <span class="letter-signature">love u soo much gueenn 💕</span>
+              </p>
+            </div>
+
+            <!-- Close Envelope Button inside Modal -->
+            <button class="close-letter-btn" id="close-letter-btn">Lipat & Simpan Surat 🌸</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-flowers">🌸 🌷 🌼 🌹 🌺</div>
+      <p class="footer-text">Dibuat khusus untuk guennn ❤️</p>
+      <p class="footer-year">2026 · Kenangan adit n guen</p>
+    </footer>
+
+  </div>
+  <!-- end #main-screen -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
